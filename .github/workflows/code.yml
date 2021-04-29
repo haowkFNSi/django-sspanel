@@ -4,6 +4,8 @@ on:
     branches:
       - dev
       - master
+  repository_dispatch:
+    types: [Check Lint]
 jobs:
   build-code:
     runs-on: ubuntu-latest
